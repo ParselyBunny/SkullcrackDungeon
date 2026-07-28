@@ -12,7 +12,16 @@ public class Inventory
     {
         // TODO: add default items for the inventory
         // there should be (1) SWORD, (1) ROPE, (1) LANTERN, and (10) RATIONS
-        Item sword = new(SWORD, 1);  // Ugh, why isn't it working??? :'(
-        _items.Add("sword");
+
+
+        Item rope = new("ROPE", 1);
+        Item lantern = new("LANTERN", 1);
+        Item ration = new("RATIONS", 10);
+
+
+        _items.Add(new Item("SWORD", 1));
+        _items.Add(rope);
+        _items.Add(lantern);
+        _items.Add(ration);
     }
 }
