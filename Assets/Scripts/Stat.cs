@@ -17,6 +17,10 @@ public struct Stat
         {
             CurrentValue = 0;
         }
+        else if (CurrentValue + add > BaseValue)
+        {
+            CurrentValue = BaseValue;
+        }
         else
         {
             CurrentValue += add;
@@ -29,6 +33,10 @@ public struct Stat
         {
             CurrentValue = 0;
         }
+        else if (val > BaseValue)
+        {
+            CurrentValue = BaseValue;
+        }
         else
         {
             CurrentValue = val;
@@ -37,8 +45,6 @@ public struct Stat
 
     public void AddBase(int add)
     {
-        int difference = add - BaseValue;
-
         if (BaseValue + add < 0)
         {
             BaseValue = 0;
