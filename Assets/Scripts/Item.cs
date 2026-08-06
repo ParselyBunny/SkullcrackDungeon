@@ -8,9 +8,13 @@ public class Item
         get => _quantity;
         private set
         {
-            if (value < 0)
+            if (value >= 0)
             {
                 _quantity = value;
+            }
+            else
+            {
+                _quantity = 0;
             }
         }
     }
@@ -22,4 +26,7 @@ public class Item
         Name = name;
         Quantity = quantity;
     }
+
+    public void Add(int val) => Quantity += val;
+    public void Set(int val) => Quantity = val;
 }
