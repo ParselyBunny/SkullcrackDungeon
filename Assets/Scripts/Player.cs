@@ -35,4 +35,16 @@ public class Player : MonoBehaviour
 
         Inventory = new();
     }
+
+    public void EatRation()
+    {
+        // Check how many rations we have
+        if (Inventory.GetItemQuantity("RATIONS") > 0)
+        {
+            // if you have enough, subtract 1
+            Inventory.AddItemQuantity("RATIONS", -1);
+            // then, add current endurance +5
+            Endurance.AddCurrent(5);
+        }
+    }
 }
