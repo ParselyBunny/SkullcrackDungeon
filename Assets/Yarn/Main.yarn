@@ -1,4 +1,62 @@
 ﻿title: Main
 ---
 The Witch of Skullcrack Dungeon
+
+<<jump side1>>
+===
+
+
+title: side1
+---
+Your nose twitches at the woody scent of a fire wafting along the darkened corridors. You slow your pace, spying dull red firelight spilling across the flagstones from a door leading to a room off the main hall. Moving silently, you can make out the low mutter of hushed voices. From the shadowplay upon the worn tapestries, you judge there are several figures gathered around the fire. You can't quite make out what they're saying.
+
+You could...
+-> ...reveal yourself to the party, or...
+    <<jump side1a>>
+-> ...take a detour and bypass them.
+    <<jump side1b>>
+
+===
+
+title: side1a
+---
+Thinking it best not to leave strangers at your back, you remain hidden but call out. At first, the shuffle of gear is the only reply, then, a dark, husky voice calls out.
+
+Husky Voice: “Hark! Who goes there?” 
+
+You hold out a hand where it can be seen in a gesture of peace, and to show you have five fingers that aren't covered in scales and sporting claws.
+
+Husky Voice: “Step toward the flames, friend, but daren’t cross the threshold, lest ye find a quarrel where it doth not belong.”
+
+You step carefully into the light, hands held palms out, but not far from your sword. Crouched beside the flame is an older human woman, her dark hair mottled with gray and pulled into a messy knot away from her face. Stormy eyes glare at you over the nose of a loaded crossbow. With only your eyes you search for her companion and notice another, younger woman crouched in a shadowed corner of the room. When your eyes land on hers, she curses and hastily hefts a pike from where it lay, scattering the various belongings piled beside it.
+
+Just when you were thinking this may have been a dreadful idea, the dark-haired woman croaks out a mirthful, gurgling laugh. She lowers the crossbow.
+
+<if human>
+Old Fighter: "Why didn't ye say ye was a person?"
+
+<if orc>
+Old Fighter: "Not like as to find better friends than ye in these parts, aye greenskin?"
+
+<if elf>
+Old Fighter: "A bloody walking plant! Shouldn’t ye be out in the sunshine? This dank place is full of surprises."
+
+She plops down with an uncouth groan.
+
+Stranger: “Come, come. No hard feelings, aye? And watch you step wisely and high, well clear of the tripwire.”
+
+You look at your feet, trying in vain to spot the wire she spoke of. The young woman has set her pike down and is already at the doorway. With a delicate gesture she traces a line in the air, and you understand she is demonstrating where the tripwire is. You step over, higher than you need to, taking care to clear the wire. Looking from this side, you see the metal wire gleam in the firelight. Quite dastardly.
+
+===
+
+title: side1b
+---
+Best to avoid them.
+
+You wait, listening quietly for an opportunity. Their conversation momentarily grows more animated, and you take this brief moment where their attention is on their words to flit past the doorway and continue quietly but briskly down the hall.
+
+Reaching the end of the corridor, you stop once to listen for pursuit. Their conversation has died off. You stay there for a while, listening to each other. Trying to gauge the threat.
+
+You decide to move on before they think to follow.
+
 ===
