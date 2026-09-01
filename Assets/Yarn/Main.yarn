@@ -2,13 +2,15 @@
 ---
 The Witch of Skullcrack Dungeon
 
-//<if debug>
--> Play
-    <<detour side1>>
--> Dev To Do List
-    <<detour todo>>
--> Docs
-    <<detour docs>>
+<<eat Player>>
+<<if isEditor()>>
+    -> Play
+        <<detour side1>>
+    -> Dev To Do List
+        <<detour todo>>
+    -> Docs
+        <<detour docs>>
+<<endif>>
 ===
 
 
