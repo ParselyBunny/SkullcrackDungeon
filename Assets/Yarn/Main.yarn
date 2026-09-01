@@ -2,7 +2,38 @@
 ---
 The Witch of Skullcrack Dungeon
 
-<<jump side1>>
+//<if debug>
+-> Play
+    <<detour side1>>
+-> Dev To Do List
+    <<detour todo>>
+-> Docs
+    <<detour docs>>
+===
+
+
+title: todo
+---
+To Do
+- Add way to check if app is a debug build
+- Add support for checking variables like inventory, race, etc.
+===
+
+
+title: docs
+---
+
+This is the documentation area. What do you want to review?
+
+-> Commands
+    <<jump cmds>>
+-> Syntax
+    <<jump syntx>>
+
+
+text [color] [size]
+the text command configures the text that will be printed out
+ex. text red huge
 ===
 
 
@@ -43,7 +74,7 @@ Old Fighter: "A bloody walking plant! Shouldn’t ye be out in the sunshine? Thi
 
 She plops down with an uncouth groan.
 
-Stranger: “Come, come. No hard feelings, aye? And watch you step wisely and high, well clear of the tripwire.”
+Old Fighter: “Come, come. No hard feelings, aye? And watch you step wisely and high, well clear of the tripwire.”
 
 You look at your feet, trying in vain to spot the wire she spoke of. The young woman has set her pike down and is already at the doorway. With a delicate gesture she traces a line in the air, and you understand she is demonstrating where the tripwire is. You step over, higher than you need to, taking care to clear the wire. Looking from this side, you see the metal wire gleam in the firelight. Quite dastardly.
 
