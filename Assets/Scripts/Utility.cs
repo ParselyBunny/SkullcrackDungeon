@@ -1,12 +1,16 @@
 using UnityEngine;
 
-public static class Dice
+public static class Utility
 {
     public static int D6()
     {
         return Random.Range(1, 7);
     }
 
+    /// <summary>
+    /// Rolls some arbitrary number of dice and returns an array 
+    /// containing the results.
+    /// </summary>
     public static int[] D6(int numOfDice)
     {
         int[] result = new int[numOfDice];

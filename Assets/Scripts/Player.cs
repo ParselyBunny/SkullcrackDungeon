@@ -40,9 +40,9 @@ public class Player : MonoBehaviour
     private void Start()
     {
         _race = Race.HUMAN;
-        Endurance = new("ENDURANCE", Dice.Sum(Dice.D6(2)) + _STAT_BASE);
-        Skill = new("SKILL", Dice.Sum(Dice.D6(1)) + _STAT_BASE);
-        Luck = new("LUCK", Dice.Sum(Dice.D6(1)) + _STAT_BASE);
+        Endurance = new("ENDURANCE", Utility.Sum(Utility.D6(2)) + _STAT_BASE);
+        Skill = new("SKILL", Utility.Sum(Utility.D6(1)) + _STAT_BASE);
+        Luck = new("LUCK", Utility.Sum(Utility.D6(1)) + _STAT_BASE);
 
         switch (_race)
         {
