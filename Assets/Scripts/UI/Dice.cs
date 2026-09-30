@@ -8,10 +8,25 @@ public class Dice : MonoBehaviour
     public Sprite[] DieFacesActive;
     public Sprite[] DieFacesInactive;
 
+    private Storyteller _storyteller;
+
     private void Start()
     {
-        SetDie1Face(3, true);
-        SetDie2Face(5);
+        _storyteller = FindAnyObjectByType<Storyteller>();
+
+        if (_storyteller != null)
+        {
+            _storyteller.DiceRolled.AddListener(RollDice);
+        }
+    }
+
+    private void RollDice()
+    {
+        int die1 = Utility.D6();
+        int die2 = Utility.D6();
+
+        SetDie1Face(die1);
+        SetDie2Face(die2);
     }
 
     private void SetDie1Face(int faceValue, bool isActive = false)

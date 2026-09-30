@@ -6,9 +6,16 @@ public class AudioManager : MonoBehaviour
     public AudioSource Music;
     public AudioSource Ambience;
 
+    private Storyteller _storyteller;
+
     private void Start()
     {
-        PlaySFX("SFX/diceRolling");
+        _storyteller = FindAnyObjectByType<Storyteller>();
+
+        if (_storyteller != null)
+        {
+            _storyteller.DiceRolled.AddListener(PlayDiceRoll);
+        }
     }
 
     public void PlaySFX(string path)
@@ -25,5 +32,10 @@ public class AudioManager : MonoBehaviour
                 $"Did you use forward slashes and leave out " +
                 $"the file extension?");
         }
+    }
+
+    private void PlayDiceRoll()
+    {
+        PlaySFX("SFX/diceRolling");
     }
 }
