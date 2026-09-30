@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 
     private Storyteller _storyteller;
 
-    private void Start()
+    private void Awake()
     {
         _storyteller = FindAnyObjectByType<Storyteller>();
 

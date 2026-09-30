@@ -10,7 +10,7 @@ public class Dice : MonoBehaviour
 
     private Storyteller _storyteller;
 
-    private void Start()
+    private void Awake()
     {
         _storyteller = FindAnyObjectByType<Storyteller>();
 
@@ -24,6 +24,8 @@ public class Dice : MonoBehaviour
     {
         int die1 = Utility.D6();
         int die2 = Utility.D6();
+
+        Debug.Log($"Rolled dice: die 1: {die1}, die 2: {die2}");
 
         SetDie1Face(die1);
         SetDie2Face(die2);
